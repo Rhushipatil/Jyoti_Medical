@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <g transform="translate(10, 10)">
+    <!-- Blue Cross -->
+    <path fill="#025ebb" d="M 30 0 H 50 V 30 H 80 V 50 H 50 V 80 H 30 V 50 H 0 V 30 H 30 Z" />
+    
+    <!-- Green Leaf -->
+    <path fill="#50b04a" d="M 0 80 C 0 45, 30 20, 75 15 C 35 45, 30 70, 5 80 Z" />
+    
+    <!-- Leaf Veins -->
+    <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" d="M 5 75 C 20 55, 40 35, 70 25" />
+    <path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" d="M 30 50 C 40 40, 50 35, 50 35" />
+    <path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" d="M 17 65 C 25 58, 30 55, 30 55" />
+  </g>
+</svg>
