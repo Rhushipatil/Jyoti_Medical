@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 150" width="100%" height="100%">
+  <defs>
+    <style>
+      .text-blue { fill: #025ebb; font-family: 'Inter', 'Outfit', 'Arial', sans-serif; font-weight: 800; font-size: 78px; letter-spacing: -1px; }
+      .text-green { fill: #50b04a; font-family: 'Inter', 'Outfit', 'Arial', sans-serif; font-weight: 800; font-size: 78px; letter-spacing: -1px; }
+    </style>
+  </defs>
+
+  <g transform="translate(15, 10)">
+    <!-- Blue Cross -->
+    <path fill="#025ebb" d="M 45 15 H 90 V 55 H 130 V 95 H 90 V 135 H 45 V 95 H 5 V 55 H 45 Z" />
+    
+    <!-- Green Leaf Overlay -->
+    <path fill="#50b04a" d="M 12 135 C 0 85, 45 50, 115 45 C 50 85, 45 120, 15 135 Z" />
+    
+    <!-- White Leaf Veins -->
+    <path fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" d="M 18 128 C 35 95, 65 70, 105 55" />
+    <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" d="M 52 94 C 62 82, 77 72, 82 72" />
+    <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" d="M 33 113 C 45 102, 55 95, 55 95" />
+
+    <!-- Stethoscope Headset -->
+    <path fill="none" stroke="#50b04a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" d="M 95 20 L 95 35 C 95 65, 135 65, 135 35 L 135 20" />
+    <!-- Ear tips -->
+    <circle cx="95" cy="17" r="7" fill="#50b04a" />
+    <circle cx="135" cy="17" r="7" fill="#50b04a" />
+    
+    <!-- Stethoscope Y-Connector -->
+    <rect x="110" y="52" width="10" height="15" fill="#50b04a" rx="3" />
+    
+    <!-- Stethoscope Flexible Tube -->
+    <path fill="none" stroke="#50b04a" stroke-width="9" stroke-linecap="round" d="M 115 62 C 115 140, 65 145, 45 135" />
+  </g>
+
+  <!-- Typography -->
+  <text x="175" y="108">
+     <tspan class="text-blue">Jyoti </tspan>
+     <tspan class="text-green">Medical</tspan>
+  </text>
+</svg>
