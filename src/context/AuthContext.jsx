@@ -22,12 +22,46 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const googleLogin = async ({ credential, profile }) => {
+    setIsLoading(true);
+    try {
+      let googleUser;
+      if (profile) {
+        // Access token flow: profile from /userinfo endpoint
+        googleUser = {
+          id: profile.sub,
+          name: profile.name,
+          email: profile.email,
+          avatar: profile.picture,
+          role: 'customer',
+        };
+      } else {
+        // Credential flow: decode JWT
+        const base64Payload = credential.split('.')[1];
+        const payload = JSON.parse(atob(base64Payload));
+        googleUser = {
+          id: payload.sub,
+          name: payload.name,
+          email: payload.email,
+          avatar: payload.picture,
+          role: 'customer',
+        };
+      }
+      setUser(googleUser);
+      return true;
+    } catch (error) {
+      throw new Error('Google login failed. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const logout = () => {
     setUser(null);
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout, isLoading }}>
+    <AuthContext.Provider value={{ user, login, googleLogin, logout, isLoading }}>
       {children}
     </AuthContext.Provider>
   );
